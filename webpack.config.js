@@ -15,6 +15,10 @@ module.exports = {
     path: __dirname
   },
 
+  resolve: {
+    modulesDirectories: ['node_modules', 'app', 'js']
+  },
+
   module: {
     loaders: [
       {
@@ -43,7 +47,7 @@ module.exports = {
   postcss: function(webpack) {
     return [
       require('postcss-import')({
-        path: ["app/css"]
+        path: ["app"]
       }),
       require('postcss-cssnext')({
         features: {
