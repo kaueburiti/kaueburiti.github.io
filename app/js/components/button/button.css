@@ -1,0 +1,41 @@
+@import 'css/base/variables.css';
+
+.button{
+  color: var(--lighter-font-color);
+  background: var(--main-color);
+  border: 1px solid color(var(--main-color) b(+ 10%));
+
+  border-radius: 3px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s;
+
+  font-size: var(--default-font-size);
+  line-height: var(--default-line-height);
+
+  &:hover{
+    transition: all .3s;
+    background: color(var(--main-color) l(+ 15%));
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  &.-success{
+    background: var(--success-color);
+    border: 1px solid color(var(--success-color) b(+ 10%));
+
+    &:hover{
+      transition: all .3s;
+      background: color(var(--success-color) lightness(+ 15%));
+    }
+  }
+
+  &.-small{
+    font-size: var(--small-font-size);
+    line-height: var(--small-line-height);
+    padding: 5px;
+  }
+}

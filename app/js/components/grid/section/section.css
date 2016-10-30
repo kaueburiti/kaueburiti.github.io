@@ -1,0 +1,16 @@
+@import 'css/base/breakpoints.css';
+@import 'css/base/variables.css';
+
+.section{
+  &.top{
+    margin-top: var(--section-margin);
+  }
+
+  &.bottom{
+    margin-bottom: var(--section-margin);
+  }
+
+  &:last-child{
+    margin-bottom: none;
+  }
+}
