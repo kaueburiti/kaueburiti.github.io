@@ -29,6 +29,7 @@
 
     &:hover{
       transition: all .3s;
+      border: 1px solid color(var(--success-color) b(+ 5%));
       background: color(var(--success-color) lightness(+ 15%));
     }
   }
