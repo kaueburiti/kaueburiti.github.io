@@ -1,0 +1,234 @@
+@import './variables.css';
+@import './breakpoints.css';
+
+$percent: 1%;
+
+.container{
+  max-width: var(--huge);
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: calc(var(--collumns-gutter) / 2);
+  padding-right: calc(var(--collumns-gutter) / 2);
+
+  position: relative;
+}
+
+.container-fluid{
+  composes: container;
+
+  max-width: 100%;
+}
+
+.row{
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  margin-left: calc(-1 * (var(--collumns-gutter) / 2));
+  margin-right: calc(-1 * (var(--collumns-gutter) / 2));
+  box-sizing: border-box;
+
+  &.reverse{
+    flex-direction: row-reverse;
+  }
+}
+
+.row.column{
+  flex-direction: column;
+
+  &.reverse{
+    flex-direction: column-reverse;
+  }
+}
+
+.col-xs{
+  flex-basis: 0;
+  flex-grow: 1;
+
+  max-width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@for $i from 1 to 12{
+  .col-xs-$(i),
+  .col-xs-offset-$(i){
+    flex: 0 0 auto;
+
+    padding: 0 15px;
+    box-sizing: border-box;
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+@for $i from 1 to 12{
+  .col-xs-$(i){
+    flex-basis: calc(($i * 100 / 12) * $percent);
+    max-width: calc(($i * 100 / 12) * $percent);
+  }
+}
+
+@for $i from 1 to 12{
+  .col-xs-offset-$(i){
+    margin-left: calc(($i * 100 / 12) * $percent);
+  }
+}
+
+.show-in-xs{
+  display: block;
+}
+
+.hide-in-xs{
+  display: none;
+}
+
+.no-wrap-xs{
+  flex-wrap: nowrap;
+}
+
+.start-xs{
+  justify-content: start;
+  text-align: start;
+}
+
+.center-xs{
+   justify-content: center;
+  text-align: center;
+}
+
+.end-xs{
+   justify-content: end;
+  text-align: end;
+}
+
+.top-xs{
+   align-items: flex-start;
+}
+
+.middle-xs{
+   align-items: center;
+}
+
+.bottom-xs{
+   align-items: flex-end;
+}
+
+.around-xs {
+   justify-content: space-around;
+}
+
+.between-xs {
+   justify-content: space-between;
+}
+
+.first-xs {
+   order: -1;
+}
+
+.last-xs {
+   order: 1;
+}
+
+@each $size, $pixels in (sm, md, bg, hg), (var(--small), var(--medium), var(--big), var(--huge)){
+  @media(min-width: $pixels){
+    .col-$(size){
+       flex-basis: 0;
+       flex-grow: 1;
+
+      max-width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+
+    @for $i from 1 to 12{
+      .col-$(size)-$(i),
+      .col-$(size)-offset-$(i){
+         flex: 0 0 auto;
+
+        padding: 0 15px;
+        box-sizing: border-box;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+
+    @for $i from 1 to 12{
+      .col-$(size)-$(i){
+        flex-basis: calc(($i * 100 / 12) * $percent);
+        max-width: calc(($i * 100 / 12) * $percent);
+      }
+    }
+
+    @for $i from 1 to 12{
+      .col-$(size)-offset-$(i){
+        margin-left: calc($i * 100 / 12 * $percent);
+      }
+    }
+
+    .show-in-$(size){
+      display: block;
+    }
+
+    .hide-in-$(size){
+      display: none;
+    }
+
+    .reset-row-direction-$(size){
+      &.row.column{
+        flex-direction: row;
+      }
+    }
+
+    .no-wrap-$(size){
+      flex-wrap: nowrap;
+    }
+
+    .start-$(size){
+       justify-content: start;
+      text-align: start;
+    }
+
+    .center-$(size){
+       justify-content: center;
+      text-align: center;
+    }
+
+    .end-$(size){
+       justify-content: end;
+      text-align: end;
+    }
+
+    .top-$(size){
+       align-items: flex-start;
+    }
+
+    .middle-$(size){
+       align-items: center;
+    }
+
+    .bottom-$(size){
+       align-items: flex-end;
+    }
+
+    .around-$(size){
+       justify-content: space-around;
+    }
+
+    .between-$(size){
+       justify-content: space-between;
+    }
+
+    .first-$(size){
+       order: -1;
+    }
+
+    .last-$(size){
+       order: 1;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import "base/variables.css";
+@import "base/breakpoints.css";
+@import "base/krid.css";
+
+body{
+  background: #eee;
+}

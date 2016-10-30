@@ -1,0 +1,58 @@
+/*Roboto*/
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+
+:root{
+  --huge: 1200px;
+  --big: 960px;
+  --medium: 768px;
+  --small: 540px;
+  --xsmall: 320px;
+
+  --percent: 1 %;
+
+  --desktop-mapa-height: 720px;
+  --mobile-mapa-height: 620px;
+
+  --default-font: 'Roboto';
+
+  --lighter-font-color: #FFF;
+  --light-font-color:#eaeaea;
+  --default-font-color: #616161;
+
+  --light-border-color: #EEE;
+  --default-border-color: #DDD;
+
+  --small-font-size: .9rem;
+  --small-line-height: calc(var(--small-font-size) * 1.2);
+  --default-font-size: 1rem;
+  --default-line-height: calc(var(--default-font-size) * 1.2);
+  --big-font-size: 1.2rem;
+  --big-line-height: calc(var(--big-font-size) * 1.2);
+  --large-font-size: 1.5rem;
+  --large-line-height: calc(var(--large-font-size) * 1.2);
+
+  --collumns-gutter: 30px;
+
+  --small-padding: 15px;
+  --default-padding: 30px;
+  --large-padding: 50px;
+
+  --section-margin: 50px;
+  --elements-margin: 30px;
+
+  --layer-background: -5;
+  --layer-base: 0;
+  --layer-front: 5;
+  --layer-over: 10;
+  --layer-in-your-face: 15;
+
+  --main-color: #3498db;
+  --main-color-border: #348cc7;
+  --main-color-active: #5ab8f7;
+
+  --success-color: #1abc9c;
+  --danger-color: #e74c3c;
+
+  --dark-gray: #3D3D3D;
+  --soft-gray: #ebeff1;
+}
