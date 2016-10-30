@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 
@@ -6,7 +7,7 @@ module.exports = {
   entry: {
     javascript: "./index.js",
     html: "./index.html",
-    css: "./index.css"
+    css: "./index.style"
   },
 
   output:{
@@ -30,7 +31,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('css!sass!postcss')
+        exclude: /(node_modules|bower_components)/,
+        loader: ExtractTextPlugin.extract('css?modules&camelCase=dashes&localIdentName=[local]---[hash:base64:6]!postcss')
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -38,7 +40,49 @@ module.exports = {
       }
     ]
   },
-  postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ],
+  postcss: function(webpack) {
+    return [
+      require('postcss-import')({
+        path: ["app/css"]
+      }),
+      require('postcss-cssnext')({
+        features: {
+          customProperties: { preserve: 'computed' }
+        },
+        plugins: {
+          afterEach: [
+            require('postcss-at-rules-variables')
+          ],
+          beforeEach: [
+            require('postcss-custom-properties')
+          ]
+        }
+      }),
+      require('postcss-nested'),
+      require('postcss-each')({
+        plugins: {
+          afterEach: [
+            require('postcss-at-rules-variables')
+          ],
+          beforeEach: [
+            require('postcss-custom-properties')
+          ]
+        }
+      }),
+      require('postcss-for')({
+        plugins: {
+          afterEach: [
+            require('postcss-at-rules-variables')
+          ],
+          beforeEach: [
+            require('postcss-custom-properties')
+          ]
+        }
+      }),
+      require('postcss-simple-vars'),
+      require('postcss-reporter')({ clearMessages: true })
+    ];
+  },
   plugins: [
     new ExtractTextPlugin('styles.css', {
       allChunks: true
