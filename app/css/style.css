@@ -4,6 +4,10 @@
 @import "base/breakpoints.css";
 @import "base/krid.css";
 
+:global * {
+  box-sizing: border-box;
+}
+
 body{
   background: #eee;
 }
