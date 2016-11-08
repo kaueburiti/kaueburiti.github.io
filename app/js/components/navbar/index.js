@@ -4,7 +4,7 @@ import _ from 'lodash';
 import FontAwesome from 'react-fontawesome';
 
 import {Container, Column, Row} from 'components/grid/';
-import Button from 'components/button/';
+import Button from 'components/ui/button/';
 import style from './navbar.css';
 
 export default class Navbar extends React.Component {
@@ -66,7 +66,7 @@ export default class Navbar extends React.Component {
                 </li>
 
                 <li className={style['main-menu__item']}>
-                  <a href="#">Contact</a>  
+                  <a href="#">Contact</a>
                 </li>
               </ul>
             </Column>

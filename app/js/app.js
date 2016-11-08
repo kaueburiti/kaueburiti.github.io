@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "components/header/";
-import Button from "components/button/";
+import Header from "components/header/"
 import style from "css/style.css";
 
 const App = () => {
