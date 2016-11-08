@@ -40,22 +40,34 @@ export default class Navbar extends React.Component {
         <Container>
           <Row options={['middle-xs']}>
             <Column options={['col-xs-8', 'col-md-2']}>
-              <img height="60px" src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/codeschool-4096-black.png" />
+              <img height="50px" src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/codeschool-4096-black.png" />
             </Column>
 
             <Column options={['col-md-10', 'last-xs', 'end-md']}>
               <ul className={menuItemsClasses}>
-                <li className={style['main-menu__item']}>Profile</li>
+                <li className={style['main-menu__item']}>
+                  <a href="#">Profile</a>
+                </li>
 
-                <li className={style['main-menu__item']}>Experience</li>
+                <li className={style['main-menu__item']}>
+                  <a href="#">Experience</a>
+                </li>
 
-                <li className={style['main-menu__item']}>Skills</li>
+                <li className={style['main-menu__item']}>
+                  <a href="#">Skills</a>
+                </li>
 
-                <li className={style['main-menu__item']}>Services</li>
+                <li className={style['main-menu__item']}>
+                  <a href="#">Services</a>
+                </li>
 
-                <li className={style['main-menu__item']}>References</li>
+                <li className={style['main-menu__item']}>
+                  <a href="#">References</a>
+                </li>
 
-                <li className={style['main-menu__item']}>Contact</li>
+                <li className={style['main-menu__item']}>
+                  <a href="#">Contact</a>  
+                </li>
               </ul>
             </Column>
 

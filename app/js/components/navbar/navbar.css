@@ -6,9 +6,7 @@
 }
 
 .main-menu{
-  background: #FFF;
-  border-top: 1px solid var(--default-border-color);
-  border-bottom: 1px solid var(--default-border-color);
+  background: transparent;
   padding: var(--small-padding) 0;
 
   &__overlay{
@@ -56,13 +54,15 @@
   }
 
   &__item{
+    letter-spacing: 2px;
+    font-weight: 600;
     display: block;
     color: var(--light-font-color);
     margin: 0 0 var(--collumns-gutter) 0;
 
     @media(--medium-viewport){
       display: inline-block;
-      color: var(--default-font-color);
+      color: #FFF;
       margin: 0 var(--collumns-gutter) 0 0;
 
       &:last-child{
