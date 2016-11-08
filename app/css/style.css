@@ -12,5 +12,6 @@
 html,
 body{
   background: #eee;
+  color: var(--default-font-color);
   font-family: var(--default-font);
 }
