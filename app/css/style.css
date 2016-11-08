@@ -3,11 +3,14 @@
 @import "base/variables.css";
 @import "base/breakpoints.css";
 @import "base/krid.css";
+@import "./elements.css";
 
 :global * {
   box-sizing: border-box;
 }
 
+html,
 body{
   background: #eee;
+  font-family: var(--default-font);
 }
