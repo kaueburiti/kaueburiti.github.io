@@ -1,14 +1,12 @@
 import React from "react";
-import Navbar from "components/navbar/";
+import Header from "components/header/";
 import Button from "components/button/";
 import style from "css/style.css";
 
 const App = () => {
   return(
     <div>
-      <Navbar />
-
-      <Button>Hello, guys!</Button>
+      <Header />
     </div>
   )
 }
