@@ -16,20 +16,20 @@
   --default-font: 'Roboto';
 
   --lighter-font-color: #FFF;
-  --light-font-color:#eaeaea;
+  --light-font-color: #a0a0a0;
   --default-font-color: #616161;
 
   --light-border-color: #EEE;
   --default-border-color: #DDD;
 
-  --small-font-size: .9rem;
-  --small-line-height: calc(var(--small-font-size) * 1.2);
+  --small-font-size: .8rem;
+  --small-line-height: calc(var(--small-font-size) * 1.4);
   --default-font-size: 1rem;
-  --default-line-height: calc(var(--default-font-size) * 1.2);
-  --big-font-size: 1.2rem;
-  --big-line-height: calc(var(--big-font-size) * 1.2);
-  --large-font-size: 1.5rem;
-  --large-line-height: calc(var(--large-font-size) * 1.2);
+  --default-line-height: calc(var(--default-font-size) * 1.4);
+  --big-font-size: 1.5rem;
+  --big-line-height: calc(var(--big-font-size) * 1.4);
+  --large-font-size: 2rem;
+  --large-line-height: calc(var(--large-font-size) * 1.4);
 
   --collumns-gutter: 30px;
 
