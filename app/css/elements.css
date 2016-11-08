@@ -2,6 +2,7 @@
 
 /*Links*/
 a{
+  cursor: pointer;
   color: inherit;
   text-decoration: none;
   transition: all .3s;
