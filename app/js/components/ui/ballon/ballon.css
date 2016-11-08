@@ -2,13 +2,12 @@
 
 .ballon{
   background: var(--main-color);
-  padding: 5px 8px;
+  padding: 6px 10px;
   color: #FFF;
   font-weight: 600;
   text-transform: uppercase;
   font-size: var(--small-font-size);
   line-height: var(--small-line-height);
-  margin-top: 50px;
   position: relative;
   display: inline-block;
 
