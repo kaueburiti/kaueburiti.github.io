@@ -46,7 +46,7 @@ export default class Navbar extends React.Component {
             <Column options={['col-md-10', 'last-xs', 'end-md']}>
               <ul className={menuItemsClasses}>
                 <li className={style['main-menu__item']}>
-                  <a href="#">Profile</a>
+                  <a href="#profile">Profile</a>
                 </li>
 
                 <li className={style['main-menu__item']}>
