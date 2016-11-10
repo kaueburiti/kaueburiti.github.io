@@ -2,16 +2,15 @@
 @import 'css/base/breakpoints.css';
 
 .profile-container{
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  z-index: var(--layer-front);
   max-width: var(--medium);
   width: 100%;
   padding: 0 calc(var(--collumns-gutter) / 2);
+  margin-top: calc(2 * var(--large-padding));
 
   @media(--medium-viewport){
-    margin: 0 auto;
+    margin: calc(2 * var(--large-padding)) auto 0 auto;
   }
 }
 

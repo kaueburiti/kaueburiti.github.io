@@ -8,8 +8,7 @@ const Header = () => {
   return(
     <div className={style.header}>
       <Navbar />
-
-      <Profile />
+      <div className={style.headerBg}></div>
     </div>
   )
 }

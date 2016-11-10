@@ -11,7 +11,7 @@
 
 html,
 body{
-  background: #eee;
+  background: #EFEFEF;
   color: var(--default-font-color);
   font-family: var(--default-font);
 }

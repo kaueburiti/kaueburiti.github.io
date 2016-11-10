@@ -6,6 +6,8 @@
 }
 
 .main-menu{
+  position: relative;
+  z-index: var(--layer-front);
   background: transparent;
   padding: var(--small-padding) 0;
 

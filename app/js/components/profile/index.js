@@ -1,11 +1,11 @@
 import React from "react";
-import {Container, Column, Row} from 'components/grid/';
+import {Container, Column, Row, Section} from 'components/grid/';
 import Ballon from "components/ui/ballon";
 import style from "./profile.css";
 
 const Profile = () => {
   return(
-    <section id="profile" className={style.profileContainer}>
+    <Section id="profile" className={style.profileContainer}>
       <div className={style.profile}>
         <Row>
           <Column options={['col-xs-12', 'col-md-6']}>
@@ -59,7 +59,7 @@ const Profile = () => {
           </Column>
         </Row>
       </div>
-    </section>
+    </Section>
   )
 }
 
