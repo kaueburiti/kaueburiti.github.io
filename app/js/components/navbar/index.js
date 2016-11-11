@@ -50,13 +50,13 @@ export default class Navbar extends React.Component {
                 </li>
 
                 <li className={style['main-menu__item']}>
-                  <a href="#">Experience</a>
-                </li>
-
-                <li className={style['main-menu__item']}>
                   <a href="#">Skills</a>
                 </li>
 
+                <li className={style['main-menu__item']}>
+                  <a href="#">Experience</a>
+                </li>
+                
                 <li className={style['main-menu__item']}>
                   <a href="#">Services</a>
                 </li>

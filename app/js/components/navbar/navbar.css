@@ -7,7 +7,7 @@
 
 .main-menu{
   position: relative;
-  z-index: var(--layer-front);
+  z-index: var(--layer-over);
   background: transparent;
   padding: var(--small-padding) 0;
 
