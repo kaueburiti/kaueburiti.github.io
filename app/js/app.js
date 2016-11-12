@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "components/header/";
 import Profile from "components/profile/";
+import Skills from "components/skills/";
 import style from "css/style.css";
 
 const App = () => {
@@ -9,6 +10,8 @@ const App = () => {
       <Header />
 
       <Profile />
+
+      <Skills />
     </div>
   )
 }

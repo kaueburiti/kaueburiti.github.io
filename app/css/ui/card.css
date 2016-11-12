@@ -1,0 +1,7 @@
+@import "css/base/variables.css";
+
+.card{
+  background: #FFF;
+  padding: var(--default-padding);
+  border: 1px solid var(--default-border-color);
+}

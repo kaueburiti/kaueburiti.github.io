@@ -1,0 +1,50 @@
+@import "css/base/variables.css";
+@import "css/base/breakpoints.css";
+
+.skills-container{
+  max-width: var(--medium);
+  padding: 0 calc(var(--collumns-gutter) / 2);
+  margin: 0 auto;
+}
+
+.skills-box{
+  composes: card from "css/ui/card.css";
+  text-align: center;
+  margin-bottom: var(--default-padding);
+
+  &__title{
+    font-size: var(--big-font-size);
+    line-height: var(--big-line-height);
+    font-weight: 600;
+
+    margin-bottom: var(--default-padding);
+  }
+}
+
+.skill{
+  margin-bottom: var(--default-padding);
+
+  &__title{
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__caption{
+    color: var(--light-font-color);
+    font-size: var(--small-font-size);
+    line-height: var(--small-line-height);
+    font-style: italic;
+  }
+
+  &__star{
+    color: var(--main-color);
+    font-size: var(--big-font-size) !important;
+    line-height: var(--big-line-height) !important;
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}

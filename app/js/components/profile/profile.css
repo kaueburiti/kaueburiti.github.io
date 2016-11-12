@@ -15,9 +15,7 @@
 }
 
 .profile{
-  background: #FFF;
-  padding: var(--default-padding);
-  border: 1px solid var(--default-border-color);
+  composes: card from 'css/ui/card.css';
 
   &__image{
     margin-bottom: var(--large-padding);

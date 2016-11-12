@@ -1,0 +1,14 @@
+@import "css/base/variables.css";
+
+.subject-section{
+  &__title{
+    font-size: var(--large-font-size);
+    line-height: var(--large-line-height);
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: var(--default-padding);
+  }
+}
