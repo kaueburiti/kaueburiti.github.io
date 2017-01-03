@@ -39,6 +39,10 @@ module.exports = {
         loader: ExtractTextPlugin.extract('css?modules&camelCase=dashes&localIdentName=[local]---[hash:base64:6]!postcss')
       },
       {
+        test: /\.(svg|ttf|woff|woff2|otf|eot)$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.(png|jpg|gif)$/,
         loader: 'file-loader'
       }
