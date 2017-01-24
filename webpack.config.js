@@ -88,7 +88,8 @@ module.exports = {
         }
       }),
       require('postcss-simple-vars'),
-      require('postcss-reporter')({ clearMessages: true })
+      require('postcss-reporter')({ clearMessages: true }),
+      require('postcss-hexrgba')
     ];
   },
   plugins: [
