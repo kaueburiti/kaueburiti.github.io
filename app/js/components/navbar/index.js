@@ -54,11 +54,7 @@ const Navbar = (props) => {
                 </li>
 
                 <li className={style['main-menu__item']}>
-                  <a href="#">Experience</a>
-                </li>
-
-                <li className={style['main-menu__item']}>
-                  <a href="#">Services</a>
+                  <a href="#">Experiences</a>
                 </li>
 
                 <li className={style['main-menu__item']}>

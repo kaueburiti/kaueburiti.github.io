@@ -2,6 +2,7 @@
   /* Site Colors */
   --main-color: #f53b74;
   --secondary-color: #f1c40f;
+  --main-black: #3d3d3d;
 
   /* Site Colors >> Utils */
   --main-color-overlay: rgba(var(--main-color), 0.75);
@@ -35,7 +36,7 @@
   --yellow-font-color: #efbd1c;
   --light-font-color: #afafaf;
   --default-font-color: #777777;
-  --dark-font-color: #3d3d3d;
+  --dark-font-color: var(--main-black);
 
   /* Z-index layers */
   --layer-background: -5;
