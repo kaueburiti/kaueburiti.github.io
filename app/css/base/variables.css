@@ -1,53 +1,50 @@
 :root{
+  /* Site Colors */
+  --main-color: #f53b74;
+  --secondary-color: #f1c40f;
+
+  /* Screen Sizes*/
   --huge: 1200px;
   --big: 960px;
   --medium: 768px;
   --small: 540px;
   --xsmall: 320px;
 
-  --percent: 1 %;
-
-  --desktop-mapa-height: 720px;
-  --mobile-mapa-height: 620px;
-
+  /* Fonts */
   --default-font: 'Roboto';
+  --special-font: 'beyond-the-mountains';
 
-  --lighter-font-color: #FFF;
-  --light-font-color: #a0a0a0;
-  --default-font-color: #616161;
-
-  --light-border-color: #EEE;
-  --default-border-color: #DDD;
+  /* Fonts >> Sizes */
+  --line-height-proportion: 1.4;
 
   --small-font-size: .8rem;
-  --small-line-height: calc(var(--small-font-size) * 1.4);
+  --small-line-height: calc(var(--small-font-size) * var(--line-height-proportion));
   --default-font-size: 1rem;
-  --default-line-height: calc(var(--default-font-size) * 1.4);
+  --default-line-height: calc(var(--default-font-size) * var(--line-height-proportion));
   --big-font-size: 1.5rem;
-  --big-line-height: calc(var(--big-font-size) * 1.4);
+  --big-line-height: calc(var(--big-font-size) * var(--line-height-proportion));
   --large-font-size: 2rem;
-  --large-line-height: calc(var(--large-font-size) * 1.4);
+  --large-line-height: calc(var(--large-font-size) * var(--line-height-proportion));
 
-  --collumns-gutter: 30px;
+  /* Fonts >> Colors */
+  --yellow-font-color: #efbd1c;
+  --light-font-color: #afafaf;
+  --default-font-color: #777777;
+  --dark-font-color: #3d3d3d;
 
-  --small-padding: 15px;
-  --default-padding: 30px;
-  --large-padding: 50px;
-
-  --section-margin: 50px;
-  --elements-margin: 30px;
-
+  /* Z-index layers */
   --layer-background: -5;
   --layer-base: 0;
   --layer-front: 5;
   --layer-over: 10;
   --layer-in-your-face: 15;
 
-  --main-color: #f73882;
+  /* Spacings */
+  --smaller-padding: 5px;
+  --small-padding: 15px;
+  --default-padding: 30px;
+  --large-padding: 50px;
 
-  --success-color: #1abc9c;
-  --danger-color: #e74c3c;
-
-  --dark-gray: #3D3D3D;
-  --soft-gray: #ebeff1;
+  /* Krid Helper */
+  --percent: 1 %;
 }
