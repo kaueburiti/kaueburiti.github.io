@@ -9,6 +9,12 @@ const Header = () => {
     <div className={style.header}>
       <Navbar />
       <div className={style.headerBg}></div>
+      <div className={style.headerMask}></div>
+
+      <section className={style.header__content}>
+        <h1 className={style.header__title}>Kauê Buriti</h1>
+        <h3 className={style.header__subheading}>Front-end Developer</h3>
+      </section>
     </div>
   )
 }

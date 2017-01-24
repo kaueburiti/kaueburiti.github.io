@@ -3,6 +3,9 @@
   --main-color: #f53b74;
   --secondary-color: #f1c40f;
 
+  /* Site Colors >> Utils */
+  --main-color-overlay: rgba(var(--main-color), 0.75);
+
   /* Screen Sizes*/
   --huge: 1200px;
   --big: 960px;
@@ -25,6 +28,8 @@
   --big-line-height: calc(var(--big-font-size) * var(--line-height-proportion));
   --large-font-size: 2rem;
   --large-line-height: calc(var(--large-font-size) * var(--line-height-proportion));
+  --larger-font-size: 3.5rem;
+  --larger-line-height: calc(var(--larger-font-size) * var(--line-height-proportion));
 
   /* Fonts >> Colors */
   --yellow-font-color: #efbd1c;
@@ -44,6 +49,8 @@
   --small-padding: 15px;
   --default-padding: 30px;
   --large-padding: 50px;
+
+  --collumns-gutter: var(--default-padding);
 
   /* Krid Helper */
   --percent: 1 %;
