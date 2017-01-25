@@ -29,7 +29,7 @@
   --default-line-height: calc(var(--default-font-size) * var(--line-height-proportion));
   --big-font-size: 1.5rem;
   --big-line-height: calc(var(--big-font-size) * var(--line-height-proportion));
-  --large-font-size: 2rem;
+  --large-font-size: 2.5rem;
   --large-line-height: calc(var(--large-font-size) * var(--line-height-proportion));
   --larger-font-size: 3.5rem;
   --larger-line-height: calc(var(--larger-font-size) * var(--line-height-proportion));
