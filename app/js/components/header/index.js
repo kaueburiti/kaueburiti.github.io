@@ -1,6 +1,7 @@
 import React from "react";
 import {Container, Column, Row} from 'components/grid/';
-import Balloon from 'components/ui/balloon';
+import ScrollDownButton from 'components/ui/scroll-down-button/';
+import Balloon from 'components/ui/balloon/';
 import Navbar from "components/navbar/";
 import Profile from "components/profile/";
 import style from "./header.css";
@@ -18,6 +19,8 @@ const Header = () => {
         </h1>
         <h3 className={style.header__subheading}>Front-end Developer</h3>
       </section>
+
+      <ScrollDownButton>Come with me</ScrollDownButton>
     </div>
   )
 }
