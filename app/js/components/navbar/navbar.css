@@ -7,7 +7,7 @@
 
 :global(.sticky-outer-wrapper.active){
   .main-menu{
-    background: var(--main-black);
+    background: var(--third-color);
     transition: background .5s;
   }
 }

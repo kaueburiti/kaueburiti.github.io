@@ -2,6 +2,8 @@
   /* Site Colors */
   --main-color: #f53b74;
   --secondary-color: #f1c40f;
+  --third-color: #2A363B;
+
   --main-black: #3d3d3d;
 
   /* Site Colors >> Utils */
@@ -33,7 +35,7 @@
   --larger-line-height: calc(var(--larger-font-size) * var(--line-height-proportion));
 
   /* Fonts >> Colors */
-  --yellow-font-color: #efbd1c;
+  --yellow-font-color: var(--secondary-color);
   --light-font-color: #afafaf;
   --default-font-color: #777777;
   --dark-font-color: var(--main-black);
