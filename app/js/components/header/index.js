@@ -1,5 +1,6 @@
 import React from "react";
 import {Container, Column, Row} from 'components/grid/';
+import Balloon from 'components/ui/balloon';
 import Navbar from "components/navbar/";
 import Profile from "components/profile/";
 import style from "./header.css";
@@ -12,7 +13,9 @@ const Header = () => {
       <div className={style.headerMask}></div>
 
       <section className={style.header__content}>
-        <h1 className={style.header__title}>Kauê Buriti</h1>
+        <h1 className={style.header__title}>
+          Kauê Buriti <Balloon yellow>Hello!</Balloon>
+        </h1>
         <h3 className={style.header__subheading}>Front-end Developer</h3>
       </section>
     </div>

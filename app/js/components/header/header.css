@@ -12,6 +12,7 @@
   }
 
   &__title{
+    position: relative;
     font-family: var(--special-font);
     color: #FFF;
     font-size: var(--larger-font-size);
