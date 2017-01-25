@@ -1,15 +1,18 @@
 @import 'css/base/variables.css';
 
-.ballon{
+.balloon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%, -60%);
   background: var(--main-color);
   padding: 6px 10px;
   color: #FFF;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-family: var(--default-font);
+  font-weight: 800;
+  letter-spacing: 2px;
   font-size: var(--small-font-size);
   line-height: var(--small-line-height);
-  position: relative;
-  display: inline-block;
 
   &:before{
     content: ' ';
@@ -22,6 +25,14 @@
     border-style: solid;
     border-width: 0 0 8px 8px;
     border-color: transparent;
-    border-left-color: var(--main-color);
+    border-left-color: color(var(--main-color) b(+ 20%));
+  }
+
+  &.-yellow{
+    background: var(--secondary-color);
+
+    &:before{
+      border-left-color: color(var(--secondary-color) b(+ 20%));
+    }
   }
 }
