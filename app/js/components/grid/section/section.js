@@ -9,8 +9,15 @@ const Section = (props) => {
   });
 
   return(
-    <section
-      className={sectionClasses} >
+    <section {...props} className={sectionClasses}>
+      <header className={style.section__header}>
+        <h2 className={style.section__title}>{props.title}</h2>
+
+        <p className={style.section__subheading}>
+          {props.subheading}
+        </p>
+      </header>
+
       {props.children}
     </section>
   );
