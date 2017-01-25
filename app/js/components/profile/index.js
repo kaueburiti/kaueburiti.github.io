@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Column, Row, Section} from 'components/grid/';
-import Ballon from "components/ui/ballon";
+import Balloon from "components/ui/balloon";
 import style from "./profile.css";
 
 const Profile = () => {
@@ -16,11 +16,11 @@ const Profile = () => {
             <div className={style.profile__content}>
               <div className={style.profile__header}>
                 <div className={style.profile__headerTop}>
-                  <Ballon>Hello!</Ballon>
+                  <Balloon>Hello!</Balloon>
                 </div>
 
                 <h2 className={style.profile__name}>
-                  I'm <span className={style.nameHighlight}>Kauê Buriti</span>
+                  Im <span className={style.nameHighlight}>Kauê Buriti</span>
                 </h2>
                 <p className={style.profile__bio}>
                   In love with front-end development.
