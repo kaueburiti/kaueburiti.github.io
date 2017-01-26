@@ -18,21 +18,37 @@ const Profile = () => {
             <Column options={['col-md-6', 'col-sm-8', 'col-xs-10']}>
               <div className={style.profile__pictureArea}>
                 <Balloon className={style.balloon + ' ' + style.one}>
-                  Hello
+                  <h5 className={style.balloon__title}>Github</h5>
+                  <p className={style.balloon__content}>
+                    <a href="https://github.com/kaueburiti">
+                      github.com/kaueburiti
+                    </a>
+                  </p>
                 </Balloon>
 
                 <Balloon className={style.balloon + ' ' + style.two}>
-                  Hello
+                  <h5 className={style.balloon__title}>Twitter</h5>
+                  <p className={style.balloon__content}>
+                    <a href="https://twitter.com/pontoka">
+                      twitter.com/pontoka
+                    </a>
+                  </p>
                 </Balloon>
 
                 <img className={style.profile__picture} src={mansFace} />
 
                 <Balloon className={style.balloon + ' ' + style.three}>
-                  Hello
+                  <h5 className={style.balloon__title}>E-mail</h5>
+                  <p className={style.balloon__content}>
+                    kauepbd@gmail.com
+                  </p>
                 </Balloon>
 
                 <Balloon className={style.balloon + ' ' + style.four}>
-                  Hello
+                  <h5 className={style.balloon__title}>Phone</h5>
+                  <p className={style.balloon__content}>
+                    +55 84 9 9846 7756
+                  </p>
                 </Balloon>
               </div>
 

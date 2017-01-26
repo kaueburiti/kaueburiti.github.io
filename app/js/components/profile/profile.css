@@ -1,6 +1,9 @@
 @import 'css/base/variables.css';
 @import 'css/base/breakpoints.css';
 
+@custom-media --ballons-breakpoint  (min-width: 670px);
+@custom-media --max-ballons-breakpoint  (max-width: 670px);
+
 .profile{
   &__resume{
     color: var(--light-font-color);
@@ -17,44 +20,93 @@
   &__picture-area{
     position: relative;
     margin-bottom: var(--large-padding);
+  }
+}
 
-    .balloon{
+.balloon{
+  text-align: left;
+  left: 50%;
+  right: auto;
+
+  &__content{
+    font-weight: 100;
+  }
+
+  @media(--max-ballons-breakpoint){
+    margin: 0 5px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    transform: translate(0,0) !important;
+    left: auto;
+    top: auto !important;
+
+    &:before{
       left: 50%;
-      right: auto;
-    }
-
-    .balloon.one,
-    .balloon.two{
-      transform: translate(-180px, -60%);
-
-      &:before{
-        left: auto;
-        right: 5px;
-        border-width: 0 8px 8px 0;
-        border-left-color: transparent;
-        border-right-color: color(var(--main-color) b(+ 20%));
-      }
-    }
-
-    .balloon.three,
-    .balloon.four{
-      transform: translate(150px, -60%);
-    }
-
-    .balloon.one{
-      top: 0;
-    }
-
-    .balloon.two{
-      top: 50px;
-    }
-
-    .balloon.three{
-      top: 30px;
-    }
-
-    .balloon.four{
-      top: 90px;
+      transform: translateX(-50%);
+      border-left-color: transparent;
+      border-right-color: transparent;
     }
   }
+}
+
+.balloon.one,
+.balloon.two{
+  @media(--max-ballons-breakpoint){
+    margin-bottom: var(--default-padding);
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &:before{
+      border-width: 8px 8px 0px 8px;
+      border-top-color: rgb(194, 59, 99);
+    }
+  }
+
+  @media(--ballons-breakpoint){
+    &:before{
+      left: auto;
+      right: 5px;
+      border-width: 0 8px 8px 0;
+      border-left-color: transparent;
+      border-right-color: color(var(--main-color) b(+ 20%));
+    }
+  }
+}
+
+.balloon.three,
+.balloon.four{
+  transform: translate(150px, -60%);
+
+  @media(--max-ballons-breakpoint){
+    margin-top: var(--default-padding);
+
+
+    &:before{
+      top: 0%;
+      transform: translate(-50%, -100%);
+      border-width: 0px 8px 8px 8px;
+      border-bottom-color: rgb(194, 59, 99);
+    }
+  }
+}
+
+.balloon.one{
+  top: 0;
+  transform: translate(-280px, -60%);
+}
+
+.balloon.two{
+  top: 180px;
+  transform: translate(-320px, -60%);
+}
+
+.balloon.three{
+  top: 100px;
+}
+
+.balloon.four{
+  top: 290px;
 }
