@@ -1,8 +1,8 @@
 @import 'css/base/variables.css';
 @import 'css/base/breakpoints.css';
 
-@custom-media --ballons-breakpoint  (min-width: 670px);
-@custom-media --max-ballons-breakpoint  (max-width: 670px);
+@custom-media --ballons-breakpoint (min-width: 670px);
+@custom-media --before-ballons-breakpoint (max-width: 669px);
 
 .profile{
   &__resume{
@@ -32,7 +32,7 @@
     font-weight: 100;
   }
 
-  @media(--max-ballons-breakpoint){
+  @media(--before-ballons-breakpoint){
     margin: 0 5px;
     text-align: center;
     display: inline-block;
@@ -52,7 +52,7 @@
 
 .balloon.one,
 .balloon.two{
-  @media(--max-ballons-breakpoint){
+  @media(--before-ballons-breakpoint){
     margin-bottom: var(--default-padding);
 
     &:last-child{
@@ -80,7 +80,7 @@
 .balloon.four{
   transform: translate(150px, -60%);
 
-  @media(--max-ballons-breakpoint){
+  @media(--before-ballons-breakpoint){
     margin-top: var(--default-padding);
 
 
