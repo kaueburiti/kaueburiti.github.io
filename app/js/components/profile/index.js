@@ -10,6 +10,7 @@ const Profile = () => {
       title={'Profile'}
       subheading={'Let me tell more about me, ok?'}
       id="profile"
+      top
       className={style.profileContainer} >
 
       <div className={style.profile}>
