@@ -32,6 +32,10 @@
     font-weight: 100;
   }
 
+  a:hover{
+    color: #FFF;
+  }
+
   @media(--before-ballons-breakpoint){
     margin: 0 5px;
     text-align: center;
