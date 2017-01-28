@@ -33,9 +33,10 @@
     width: 100%;
     height: 720px;
     background: url('image/backgrounds/city_background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &-mask{
