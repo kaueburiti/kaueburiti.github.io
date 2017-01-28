@@ -2,7 +2,7 @@
 @import 'css/base/variables.css';
 
 .section{
-  margin: var(--large-padding) 0;
+  margin: calc(var(--large-padding) * 2) 0;
 
   &__header{
     position: relative;
