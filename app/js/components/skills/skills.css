@@ -6,15 +6,12 @@
 }
 
 .skill{
-  &__options{
-    margin-bottom: var(--default-padding);
-  }
 
   &__option{
     display: inline-block;
     font-weight: 600;
-    margin-right: var(--default-padding);
-
+    margin: 0 0 var(--default-padding) var(--default-padding);
+    
     &.-selected{
       color: var(--main-color);
     }
