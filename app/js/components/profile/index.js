@@ -20,7 +20,7 @@ const Profile = () => {
                 <Balloon className={style.balloon + ' ' + style.one}>
                   <h5 className={style.balloon__title}>Github</h5>
                   <p className={style.balloon__content}>
-                    <a href="https://github.com/kaueburiti">
+                    <a href="https://github.com/kaueburiti" target="_blank">
                       github.com/kaueburiti
                     </a>
                   </p>
@@ -29,7 +29,7 @@ const Profile = () => {
                 <Balloon className={style.balloon + ' ' + style.two}>
                   <h5 className={style.balloon__title}>Twitter</h5>
                   <p className={style.balloon__content}>
-                    <a href="https://twitter.com/pontoka">
+                    <a href="https://twitter.com/pontoka" target="_blank">
                       twitter.com/pontoka
                     </a>
                   </p>
