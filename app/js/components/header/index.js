@@ -10,8 +10,8 @@ const Header = () => {
   return(
     <div className={style.header}>
       <Navbar />
-      <div className={style.headerBg}></div>
-      <div className={style.headerMask}></div>
+      <div className={style.header__bg}></div>
+      <div className={style.header__mask}></div>
 
       <section className={style.header__content}>
         <h1 className={style.header__title}>
