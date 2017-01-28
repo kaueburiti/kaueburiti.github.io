@@ -23,6 +23,7 @@
   }
 
   &__title{
+    color: var(--dark-font-color);
     font-family: var(--special-font);
     font-size: var(--large-font-size);
     line-height: var(--large-line-height);
