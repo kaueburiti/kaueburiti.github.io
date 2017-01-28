@@ -1,0 +1,89 @@
+@import "css/base/variables.css";
+@import "css/base/breakpoints.css";
+
+.experience{
+  position: relative;
+  // background: url('https://image.freepik.com/free-icon/macos-platform_318-33076.jpg'); 
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.experience-card{
+  height: 150px;
+  margin-bottom: var(--default-padding);
+  position: relative;
+  overflow: hidden;
+
+  &__content{
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: left;
+    color: #FFF;
+    padding: var(--default-padding);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__role{
+    font-weight: 100;
+    margin-bottom: var(--default-padding);
+  }
+
+  &__bg{
+    width: 100%;
+    height: 720px;
+    background: url('image/backgrounds/city_background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--main-color-overlay);
+  }
+
+  @media(--small-viewport){
+    height: 370px;
+    margin-bottom: 0;
+  }
+}
+
+.experience-content{
+  position: relative;
+  text-align: left;
+
+  &__company{
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: var(--big-font-size);
+    line-height: var(--big-line-height);
+    margin-bottom: var(--small-padding);
+  }
+
+  &__text{
+    font-weight: 100;
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+    margin-bottom: var(--default-padding);
+  }
+
+  &__skill{
+    color: #FFF;
+    display: inline-block;
+    margin: 0 var(--small-padding) var(--small-padding) 0;
+    font-size: var(--small-font-size);
+    line-height: var(--small-font-size);
+    background: var(--main-color);
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+}
