@@ -10,7 +10,7 @@
   &__option{
     display: inline-block;
     font-weight: 600;
-    margin: 0 0 var(--default-padding) var(--default-padding);
+    margin: 0 var(--default-padding) var(--default-padding) 0;
     
     &.-selected{
       color: var(--main-color);
