@@ -1,7 +1,5 @@
 import React from "react";
 import {Section, Container, Column, Row} from 'components/grid/';
-import FontAwesome from 'react-fontawesome';
-import SubjectSection from "components/subject-section/";
 import style from "./skills.css";
 
 const Skills = () => {
