@@ -1,0 +1,55 @@
+@import "css/base/variables.css";
+@import "css/base/krid.css";
+@import 'css/base/breakpoints.css';
+
+.footer{
+  composes: row;
+  composes: middle-xs;
+  composes: center-xs;
+  margin: calc(var(--large-padding) * 2) 0 0;
+  padding: var(--large-padding) 0;
+  position: relative;
+  height: 300px;
+  background: url('image/backgrounds/city_background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__overlay{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: rgba(var(--secondary-color), 0.85);
+  }
+
+  &__content{
+    color: #FFF;
+    padding: 0 var(--default-padding);
+    z-index: var(--layer-front);
+  }
+
+  &__call{
+    font-weight: 100;
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+
+
+    @media(--small-viewport){
+      font-size: var(--big-font-size);
+      line-height: var(--big-line-height);
+    }
+  }
+
+  &__email{
+    font-size: var(--big-font-size);
+    line-height: var(--big-line-height);
+    font-weight: 600;
+
+    @media(--small-viewport){
+      font-size: var(--large-font-size);
+      line-height: var(--large-line-height);
+    }
+  }
+}
