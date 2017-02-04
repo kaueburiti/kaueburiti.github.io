@@ -4,7 +4,7 @@ import Profile from "components/profile/";
 import Skills from "components/skills/";
 import Experiences from "components/experiences/";
 import References from "components/references/";
-import Footer from "components/footer/";
+import Contact from "components/contact/";
 import style from "css/style.css";
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
       <Skills />
       <Experiences />
       <References />
-      <Footer />
+      <Contact />
     </div>
   )
 }

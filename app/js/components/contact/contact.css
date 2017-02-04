@@ -2,7 +2,7 @@
 @import "css/base/krid.css";
 @import 'css/base/breakpoints.css';
 
-.footer{
+.contact{
   composes: row;
   composes: middle-xs;
   composes: center-xs;
