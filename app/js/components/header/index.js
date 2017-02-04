@@ -20,7 +20,7 @@ const Header = () => {
         <h3 className={style.header__subheading}>Front-end Developer</h3>
       </section>
 
-      <ScrollDownButton>Come with me</ScrollDownButton>
+      <ScrollDownButton bounce>Come with me</ScrollDownButton>
     </div>
   )
 }
