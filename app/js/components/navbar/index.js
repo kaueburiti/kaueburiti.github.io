@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { navbarToggle } from "actions/";
 import cx from 'classnames';
 import _ from 'lodash';
+import Jump from 'components/utils/jump/';
 import Sticky from "react-stickynode";
 import FontAwesome from 'react-fontawesome';
 import {Container, Column, Row} from 'components/grid/';
@@ -46,23 +47,23 @@ const Navbar = (props) => {
             <Column options={['col-md-10', 'last-xs', 'end-md']}>
               <ul className={menuItemsClasses}>
                 <li className={style['main-menu__item']}>
-                  <a href="#profile">Profile</a>
+                  <Jump target="#profile">Profile</Jump>
                 </li>
 
                 <li className={style['main-menu__item']}>
-                  <a href="#">Skills</a>
+                  <Jump target="#skills">Skills</Jump>
                 </li>
 
                 <li className={style['main-menu__item']}>
-                  <a href="#">Experiences</a>
+                  <Jump target="#experiences">Experiences</Jump>
                 </li>
 
                 <li className={style['main-menu__item']}>
-                  <a href="#">References</a>
+                  <Jump target="#references">References</Jump>
                 </li>
 
                 <li className={style['main-menu__item']}>
-                  <a href="#">Contact</a>
+                  <Jump target="#contact">Contact</Jump>
                 </li>
               </ul>
             </Column>
