@@ -1,5 +1,6 @@
 import React from "react";
-import {Section, Container, Column, Row} from 'components/grid/';
+import { Section, Container, Column, Row } from 'components/grid/';
+import { Tabs, TabList, Tab } from 'components/utils/tabs';
 import style from "./skills.css";
 
 const Skills = () => {
@@ -51,6 +52,15 @@ const Skills = () => {
           consequuntur ratione voluptatem sequi nesciunt
         </div>
       </div>
+
+      <Container>
+        <Tabs>
+          <TabList>
+            <Tab tabName="option1" >Op. 1</Tab>
+            <Tab tabName="option2" >Op. 2</Tab>
+          </TabList>
+        </Tabs>
+      </Container>
     </Section>
   )
 }
