@@ -22,15 +22,15 @@ const Skills = () => {
             <Tab tabName="extra_skills" className={style.skill__option}>Extra Skills</Tab>
           </TabList>
 
-          <TabContent contentController="javascript">
+          <TabContent className={style.skill__tabContent} contentController="javascript">
             <Javascript />
           </TabContent>
 
-          <TabContent contentController="html_css">
+          <TabContent className={style.skill__tabContent} contentController="html_css">
             <HtmlCss />
           </TabContent>
 
-          <TabContent contentController="ux_ui">
+          <TabContent className={style.skill__tabContent} contentController="ux_ui">
             <UxUi />
           </TabContent>
         </Tabs>

@@ -5,7 +5,7 @@ const TabContent = (props) => {
     return null;
 
   return(
-    <div>
+    <div className={props.className}>
       {props.children}
     </div>
   )

@@ -5,7 +5,7 @@ import style from "./../skills.css";
 const HtmlCss = (props) => {
   return(
     <div>
-      <header className={style.skill__header}>
+      <header className={style.skill__header + ' ' + style.html}>
         <Container>
           <Row>
             <Column options={['col-xs-12']}>
