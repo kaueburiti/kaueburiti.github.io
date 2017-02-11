@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TAB_LIST_NAME } from "./components-names.js";
+import { TAB_LIST_NAME, TAB_CONTENT_NAME } from "./components-names.js";
 import { getChildPerTypeName } from "./util.js";
 
 export default class Tabs extends Component {
@@ -7,7 +7,7 @@ export default class Tabs extends Component {
     super(props);
 
     this.state = {
-      currentTab: ''
+      currentTab: 'javascript'
     }
   }
 
@@ -19,14 +19,22 @@ export default class Tabs extends Component {
     const tabListWithProps = getChildPerTypeName(
       this.props.children,
       TAB_LIST_NAME,
-      {onClick: this.onClick.bind(this)}
+      {
+        onClick: this.onClick.bind(this),
+        currentTab: this.state.currentTab
+      }
+    );
+
+    const tabContentWithProps = getChildPerTypeName(
+      this.props.children,
+      TAB_CONTENT_NAME,
+      {currentTab: this.state.currentTab}
     );
 
     return(
       <div>
-        <h1>Tabs!</h1>
-
         {tabListWithProps}
+        {tabContentWithProps}
       </div>
     )
   }

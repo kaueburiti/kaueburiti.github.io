@@ -6,13 +6,16 @@ const TabList = (props) => {
   const tabsWithProps = getChildPerTypeName(
     props.children,
     TAB_NAME,
-    {onClick: props.onClick}
+    {
+      onClick: props.onClick,
+      currentTab: props.currentTab
+    }
   );
 
   return(
-    <div>
+    <ul className={props.className}>
       {tabsWithProps}
-    </div>
+    </ul>
   )
 }
 

@@ -1,10 +1,15 @@
 import React from "react";
+import cx from "classnames";
 
 const Tab = (props) => {
+  const tabClasses = cx(props.className, {
+    'selected': props.tabName === props.currentTab
+  });
+  
   return(
-    <div onClick={props.onClick.bind(this, props.tabName)}>
+    <li className={tabClasses} onClick={props.onClick.bind(this, props.tabName)}>
       {props.children}
-    </div>
+    </li>
   )
 }
 
