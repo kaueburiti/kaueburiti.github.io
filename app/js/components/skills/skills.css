@@ -1,18 +1,23 @@
 @import "css/base/variables.css";
 @import "css/base/breakpoints.css";
+@import "css/base/krid.css";
 
 .skills-container{
   background: #efefef;
 }
 
 .skill{
+  &__options{
+    composes: container;
+  }
 
   &__option{
     display: inline-block;
     font-weight: 600;
     margin: 0 var(--default-padding) var(--default-padding) 0;
-    
-    &.-selected{
+
+    &:global(.selected){
+      transition: color .5s linear;
       color: var(--main-color);
     }
   }
