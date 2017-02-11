@@ -1,6 +1,7 @@
 import React from "react";
 import { Section, Container, Column, Row } from 'components/grid/';
-import { Tabs, TabList, Tab } from 'components/utils/tabs';
+import { Tabs, TabList, Tab, TabContent } from 'components/utils/tabs';
+import { Javascript, HtmlCss, UxUi } from './skills/';
 import style from "./skills.css";
 
 const Skills = () => {
@@ -11,56 +12,29 @@ const Skills = () => {
       id="skills">
 
       <div className={style.skill}>
-        <Container>
-          <Row>
-            <Column options={['col-xs-12']}>
-              <ul className={style.skill__options}>
-                <li className={style.skill__option + ' ' + style['-selected']}>Javascript</li>
-                <li className={style.skill__option}>HTML/CSS</li>
-                <li className={style.skill__option}>UX/UI Design</li>
-                <li className={style.skill__option}>Project Management</li>
-                <li className={style.skill__option}>SEO</li>
-                <li className={style.skill__option}>Extra Skills</li>
-              </ul>
-            </Column>
-          </Row>
-        </Container>
-
-        <header className={style.skill__header}>
-          <Container>
-            <Row>
-              <Column options={['col-xs-12']}>
-                <div className={style.skill__headerContentContainer}>
-                  <div className={style.skill__headerContent}>
-                    <h1 className={style.skill__headerTitle}>Javascript</h1>
-                    <p className={style.skill__headerSubheading}>
-                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    </p>
-                  </div>
-                </div>
-              </Column>
-            </Row>
-          </Container>
-        </header>
-
-        <div className={style.skill__content}>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-          odit aut fugit, sed quia consequuntur magni dolores eos qui
-          consequuntur ratione voluptatem sequi nesciunt
-        </div>
-      </div>
-
-      <Container>
         <Tabs>
-          <TabList>
-            <Tab tabName="option1" >Op. 1</Tab>
-            <Tab tabName="option2" >Op. 2</Tab>
+          <TabList className={style.skill__options}>
+            <Tab tabName="javascript" className={style.skill__option}>Javascript</Tab>
+            <Tab tabName="html_css" className={style.skill__option}>HTML/CSS</Tab>
+            <Tab tabName="ux_ui" className={style.skill__option}>UX/UI Design</Tab>
+            <Tab tabName="project_management" className={style.skill__option}>Project Management</Tab>
+            <Tab tabName="seo" className={style.skill__option}>SEO</Tab>
+            <Tab tabName="extra_skills" className={style.skill__option}>Extra Skills</Tab>
           </TabList>
+
+          <TabContent contentController="javascript">
+            <Javascript />
+          </TabContent>
+
+          <TabContent contentController="html_css">
+            <HtmlCss />
+          </TabContent>
+
+          <TabContent contentController="ux_ui">
+            <UxUi />
+          </TabContent>
         </Tabs>
-      </Container>
+      </div>
     </Section>
   )
 }
