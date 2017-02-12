@@ -3,10 +3,32 @@
 
 .experience{
   position: relative;
-  // background: url('https://image.freepik.com/free-icon/macos-platform_318-33076.jpg'); 
-  background-repeat: no-repeat;
-  background-position-x: 50%;
-  background-position-y: 50%;
+  margin-bottom: calc(2 * var(--large-padding));
+
+  &.empregosrn{
+    background: url('image/experiences/empregosrn.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 90%;
+  }
+
+  &.tribuna{
+    background: url('image/experiences/tribuna.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 90%;
+  }
+
+  &.ecostage{
+    background: url('image/experiences/ecostage.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 90%;
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 
 .experience-card{
