@@ -8,7 +8,7 @@ const Profile = () => {
   return(
     <Section
       title={'Profile'}
-      subheading={'Let me tell more about me, ok?'}
+      subheading={'Who am I and how can you find me.'}
       id="profile"
       top
       className={style.profileContainer} >
@@ -28,10 +28,10 @@ const Profile = () => {
                 </Balloon>
 
                 <Balloon className={style.balloon + ' ' + style.two}>
-                  <h5 className={style.balloon__title}>Twitter</h5>
+                  <h5 className={style.balloon__title}>LinkedIn</h5>
                   <p className={style.balloon__content}>
-                    <a href="https://twitter.com/pontoka" target="_blank">
-                      twitter.com/pontoka
+                    <a href="https://br.linkedin.com/in/kaueburiti" target="_blank">
+                      br.linkedin.com/in/kaueburiti
                     </a>
                   </p>
                 </Balloon>
@@ -54,11 +54,23 @@ const Profile = () => {
               </div>
 
               <div className={style.profile__resume}>
-                Lorem ipsum <span className={style.highlight}>dolor sit</span> amet, consectetur adipiscing elit, sed do
-                eiusmod <span className={style.highlight}>tempor</span>
-                incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud <span className={style.highlight}>exercitation</span>
-                ullamco laboris nisi ut aliquip ex ea commodo ad minim veniam consequat.
+                <p>I'm <span className={style.highlight}>Kauê Buriti</span>, a
+                front-end developer living at Natal,
+                <span className={style.highlight}> Brazil</span>.
+                I have always loved the Web, so, when I realized that I could help
+                to build it, I started my life alongside things like
+                <span className={style.highlight}> Design</span>,
+                <span className={style.highlight}> Javascript</span>,
+                <span className={style.highlight}> HTML/CSS</span> and
+                <span className={style.highlight}> Web relateded business</span>.
+                </p>
+
+
+              </div>
+
+              <div className={style.profile__resume}>
+                <p>It's been a greate journey, and I hope you enjoy know a little
+                bit more about it!</p>
               </div>
             </Column>
 
