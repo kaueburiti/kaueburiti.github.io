@@ -69,7 +69,7 @@ const Profile = () => {
               </div>
 
               <div className={style.profile__resume}>
-                <p>It's been a greate journey, and I hope you enjoy know a little
+                <p>It's been a great journey, and I hope you enjoy know a little
                 bit more about it!</p>
               </div>
             </Column>
