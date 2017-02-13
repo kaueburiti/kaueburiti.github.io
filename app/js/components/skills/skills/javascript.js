@@ -13,7 +13,7 @@ const Javascript = (props) => {
                 <div className={style.skill__headerContent}>
                   <h1 className={style.skill__headerTitle}>Javascript</h1>
                   <p className={style.skill__headerSubheading}>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Loving even the weird parts. Really.
                   </p>
                 </div>
               </div>
@@ -23,12 +23,16 @@ const Javascript = (props) => {
       </header>
 
       <div className={style.skill__content}>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui
-        consequuntur ratione voluptatem sequi nesciunt
+        <p>Javascript is a true passion to me, as well all the environment
+        that surrounds it. Right now i'm really focused on things like
+        <span className={style.highlight}> react</span>,
+        <span className={style.highlight}> redux</span>,
+        <span className={style.highlight}> functional programming in javascript </span>
+        and <span className={style.highlight}> knowing more deeply</span> all weirds
+        and wonderful parts that composes this language.</p>
+
+        <p>I'm really excited about the future of the language and about help to build
+         a totally new generation of front-end driven applications.</p>
       </div>
     </div>
   )
