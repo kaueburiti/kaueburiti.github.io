@@ -13,7 +13,7 @@ const HtmlCss = (props) => {
                 <div className={style.skill__headerContent}>
                   <h1 className={style.skill__headerTitle}>HTML & CSS</h1>
                   <p className={style.skill__headerSubheading}>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Strong foundations are everything.
                   </p>
                 </div>
               </div>
@@ -23,12 +23,17 @@ const HtmlCss = (props) => {
       </header>
 
       <div className={style.skill__content}>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui
-        consequuntur ratione voluptatem sequi nesciunt
+        <p>I believe that HTML and CSS are amazing tools to build more semantic
+        and easy to maintain web. <span className={style.highlight}>CSS's methodologies </span>
+        are something that fascinates me, and I think that we should not underestimate the power
+        of a well writeded HTML/CSS</p>
+
+        <p>Right now I'm using a lot of <span className={style.highlight}>CSS modules</span>
+        with <span className={style.highlight}>PostCSS</span>, configured to
+        allow <span className={style.highlight}>SASS</span>'s syntax.
+        <span className={style.highlight}>Animations</span>
+        and <span className={style.highlight}>how CSS works under the hood</span> are
+        subjects, wich each day more, gives me interesting new things to study!</p>
       </div>
     </div>
   )
