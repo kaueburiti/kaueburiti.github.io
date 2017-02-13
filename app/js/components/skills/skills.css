@@ -80,6 +80,10 @@
     }
   }
 
+  &__header-subheading{
+    font-weight: 800;
+  }
+
   &__content{
     font-weight: 100;
     color: var(--light-font-color);
@@ -90,11 +94,19 @@
     text-align: left;
     font-size: var(--big-font-size);
     line-height: var(--big-line-height);
+
+    p{
+      margin-bottom: var(--default-padding);
+    }
   }
 
   &__tab-content{
     animation: fade-in 1s linear;
 
+  }
+
+  .highlight{
+    color: var(--main-color);
   }
 }
 
