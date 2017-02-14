@@ -13,7 +13,7 @@ const Javascript = (props) => {
                 <div className={style.skill__headerContent}>
                   <h1 className={style.skill__headerTitle}>Javascript</h1>
                   <p className={style.skill__headerSubheading}>
-                    Loving even the weird parts. Really.
+                    “Programs must be written for people to read, and only incidentally for machines to execute.” -  Harold Abelson
                   </p>
                 </div>
               </div>
@@ -32,7 +32,7 @@ const Javascript = (props) => {
         and wonderful parts that composes this language.</p>
 
         <p>I'm really excited about the future of the language and about help to build
-         a totally new generation of front-end driven applications.</p>
+         a totally new generation of <span className={style.highlight}>front-end driven applications</span>.</p>
       </div>
     </div>
   )

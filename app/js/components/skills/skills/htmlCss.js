@@ -13,7 +13,7 @@ const HtmlCss = (props) => {
                 <div className={style.skill__headerContent}>
                   <h1 className={style.skill__headerTitle}>HTML & CSS</h1>
                   <p className={style.skill__headerSubheading}>
-                    Strong foundations are everything.
+                    “Without foundations, there can be no fashion.“ - Christian Dior
                   </p>
                 </div>
               </div>

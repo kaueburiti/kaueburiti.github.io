@@ -48,7 +48,23 @@
       background-size: cover;
     }
 
-    &.ux{
+    &.design{
+      background: url('image/backgrounds/city_background.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &.management{
+      background: url('image/backgrounds/city_background.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &.extra{
       background: url('image/backgrounds/city_background.jpg');
       background-attachment: fixed;
       background-position: center;
@@ -97,6 +113,11 @@
 
     p{
       margin-bottom: var(--default-padding);
+    }
+
+    ul{
+      list-style: circle;
+      padding-left: 25px;
     }
   }
 

@@ -1,14 +1,20 @@
 import React from "react";
 import { Section, Container, Column, Row } from 'components/grid/';
 import { Tabs, TabList, Tab, TabContent } from 'components/utils/tabs';
-import { Javascript, HtmlCss, UxUi } from './skills/';
+import {
+  Javascript,
+  HtmlCss,
+  Design,
+  ProjectManagement,
+  ExtraSkills
+} from './skills/';
 import style from "./skills.css";
 
 const Skills = () => {
   return(
     <Section
       title="Skills"
-      subheading={'Let me tell more about me, ok?'}
+      subheading={'"But what I do have are a very particular set of skill..." (TAKEN, 2008)'}
       id="skills">
 
       <div className={style.skill}>
@@ -16,9 +22,8 @@ const Skills = () => {
           <TabList className={style.skill__options}>
             <Tab tabName="javascript" className={style.skill__option}>Javascript</Tab>
             <Tab tabName="html_css" className={style.skill__option}>HTML/CSS</Tab>
-            <Tab tabName="ux_ui" className={style.skill__option}>UX/UI Design</Tab>
+            <Tab tabName="design" className={style.skill__option}>Design</Tab>
             <Tab tabName="project_management" className={style.skill__option}>Project Management</Tab>
-            <Tab tabName="seo" className={style.skill__option}>SEO</Tab>
             <Tab tabName="extra_skills" className={style.skill__option}>Extra Skills</Tab>
           </TabList>
 
@@ -30,8 +35,16 @@ const Skills = () => {
             <HtmlCss />
           </TabContent>
 
-          <TabContent className={style.skill__tabContent} contentController="ux_ui">
-            <UxUi />
+          <TabContent className={style.skill__tabContent} contentController="design">
+            <Design />
+          </TabContent>
+
+          <TabContent className={style.skill__tabContent} contentController="project_management">
+            <ProjectManagement />
+          </TabContent>
+
+          <TabContent className={style.skill__tabContent} contentController="extra_skills">
+            <ExtraSkills />
           </TabContent>
         </Tabs>
       </div>
