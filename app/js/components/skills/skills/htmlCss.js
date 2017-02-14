@@ -23,15 +23,14 @@ const HtmlCss = (props) => {
       </header>
 
       <div className={style.skill__content}>
-        <p>I believe that HTML and CSS are amazing tools to build more semantic
-        and easy to maintain web. <span className={style.highlight}>CSS's methodologies </span>
-        are something that fascinates me, and I think that we should not underestimate the power
+        <p><span className={style.highlight}>CSS's methodologies </span>
+        are something that fascinates me, and I think we should not underestimate the power
         of a well writeded HTML/CSS</p>
 
-        <p>Right now I'm using a lot of <span className={style.highlight}>CSS modules</span>
+        <p>I'm using a lot of <span className={style.highlight}>CSS modules </span>
         with <span className={style.highlight}>PostCSS</span>, configured to
         allow <span className={style.highlight}>SASS</span>'s syntax.
-        <span className={style.highlight}>Animations</span>
+        <span className={style.highlight}> Animations </span>
         and <span className={style.highlight}>how CSS works under the hood</span> are
         subjects, wich each day more, gives me interesting new things to study!</p>
       </div>
