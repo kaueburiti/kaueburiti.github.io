@@ -13,18 +13,19 @@ const EmpregosRN = () => {
       className={style.empregosrn}
       skills={
         [
-          'UX/UI',
           'Javascript',
-          'Design',
-          'Team work/management',
-          'Version Control'
+          'React JS',
+          'Ruby on Rails',
+          'Version Control',
+          'Advanced CSS methodologies'
         ]
       }>
-      Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-      aute irure dolor in reprehenderit
+      <p>In 2010 i helped to build the <a href="http://vagasempregosrn.com.br/" title="Empregos RN" target="_blank">Empregos RN</a>,
+      the <span className={style.highlight}>bigger job plataform in my State</span>.</p>
+      <p>I believe that the most important learnings that i got was about
+      <span className={style.highlight}> Business</span>, <span className={style.highlight}>Project Management</span> and
+      improving the <span className={style.highlight}>User Experience through tests and interviews</span>.</p>
+      <p>The lessons of <span className={style.highlight}>entrepreneurship</span> that i got from this business are priceless!</p>
     </Experience>
   );
 };

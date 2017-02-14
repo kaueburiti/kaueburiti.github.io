@@ -14,18 +14,24 @@ const Tribuna = () => {
       reverse
       skills={
         [
-          'UX/UI',
           'Javascript',
-          'Design',
-          'Team work/management',
-          'Version Control'
+          'PHP environment',
+          'Ruby on Rails',
+          'Gulp/Grunt',
+          'Pair programming',
+          'Wordpress'
         ]
       }>
-      Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-      aute irure dolor in reprehenderit
+      <p>The Tribuna do Norte is the most important paper in my region, and there i worked on
+      great <span className={style.highlight}>multidisciplinary teams</span>.</p>
+      <p>The bigger project that I worked on in Tribuna do Norte, was the <a
+      href="http://www.tribunadonorte.com.br/classificados"
+      title="Classificados da Tribuna do Norte"
+      target="_blank">
+      "Classificados da Tribuna do Norte"</a>,
+      a online plataform to selling, focused on properties and cars, and i helped to <span className={style.highlight}>design and code it</span>.
+      We have build some others small things and <span className={style.highlight}>landing page</span> to
+      special journalistc articles, some of that <span className={style.highlight}>awarded in national contests</span>!</p>
     </Experience>
   );
 };

@@ -96,6 +96,18 @@
     font-size: var(--default-font-size);
     line-height: var(--default-line-height);
     margin-bottom: var(--default-padding);
+
+    .highlight{
+      color: var(--main-color);
+    }
+
+    a{
+      text-decoration: underline;
+    }
+
+    p{
+      margin-bottom: var(--small-padding);
+    }
   }
 
   &__skill{
