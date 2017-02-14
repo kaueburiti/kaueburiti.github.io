@@ -55,10 +55,10 @@ const Profile = () => {
 
               <div className={style.profile__resume}>
                 <p>I'm <span className={style.highlight}>Kauê Buriti</span>, a
-                front-end developer living at Natal,
+                front-end developer living in Natal,
                 <span className={style.highlight}> Brazil</span>.
-                I have always loved the Web, so, when I realized that I could help
-                to build it, I started my life alongside things like
+                I have always loved the Web, so, when I realized I could help
+                to build it, I started living alongside things like
                 <span className={style.highlight}> Design</span>,
                 <span className={style.highlight}> Javascript</span>,
                 <span className={style.highlight}> HTML/CSS</span> and
@@ -69,7 +69,7 @@ const Profile = () => {
               </div>
 
               <div className={style.profile__resume}>
-                <p>It's been a great journey, and I hope you enjoy know a little
+                <p>It's been a great journey, and I hope you enjoy knowing a little
                 bit more about it!</p>
               </div>
             </Column>
