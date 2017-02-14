@@ -28,7 +28,7 @@ const Javascript = (props) => {
         <span className={style.highlight}> react</span>,
         <span className={style.highlight}> redux</span>,
         <span className={style.highlight}> functional programming in javascript </span>
-        and <span className={style.highlight}> knowing more deeply</span> all weirds
+        and <span className={style.highlight}> knowing more deeply</span> all the weirds
         and wonderful parts that composes this language.</p>
 
         <p>I'm really excited about the future of the language and about help to build
