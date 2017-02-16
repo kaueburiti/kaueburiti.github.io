@@ -21,7 +21,8 @@
   }
 
   &__content{
-    padding: var(--small-padding);
+    text-align: center;
+    padding: var(--small-padding) var(--default-padding);
     position: absolute;
     background: rgba(#000, 0.3);
     color: #FFF;
@@ -47,6 +48,8 @@
   }
 
   &__text{
+    padding: 0 15px;
+    text-align: justify;
     font-weight: 100;
     font-size: 1.2rem;
     line-height: 1.8rem;
