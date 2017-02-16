@@ -18,8 +18,8 @@ const Tiago = () => {
         <div className={style.reference__text}>
           <p>
             Kauê is a professional committed to the projects they develop, and his
-            ability to work as a team and ransform the development of projects
-            into something collaborative is one of its main characteristics.
+            ability to transform the development of projects into something
+            collaborative is one of its main characteristics.
           </p>
         </div>
       </div>
