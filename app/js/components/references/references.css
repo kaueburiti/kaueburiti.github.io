@@ -17,14 +17,13 @@
 
   &__image{
     max-width: 100%;
-    filter: grayscale(100%);
-    transition: all .5s;
+    display: block;
   }
 
   &__content{
     padding: var(--small-padding);
     position: absolute;
-    background: var(--main-color);
+    background: rgba(#000, 0.3);
     color: #FFF;
     bottom: 0;
     width: 100%;
@@ -57,7 +56,7 @@
   &:hover{
     .reference__content{
       transform: translateY(0);
-      background: rgba(var(--main-color), 0.8);
+      background: rgba(#000, 0.7);
       transition: transform .5s, background 1.5s;
 
     }
