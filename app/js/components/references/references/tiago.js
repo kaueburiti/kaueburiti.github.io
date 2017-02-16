@@ -16,11 +16,11 @@ const Tiago = () => {
         </header>
 
         <div className={style.reference__text}>
-          Muito carismático e extrovertido, está sempre em busca de boas relações
-          com a equipe. É muito competente e comprometido com os projetos nos
-          quais trabalha, prezando pelas melhores formas de desenvolver as
-          soluções necessárias. Sua dinamicidade e pluralidade permite com que
-          ele saiba alternar entre diferentes áreas do desenvolvimento web.
+          <p>
+            Kauê is a professional committed to the projects they develop, and his
+            ability to work as a team and ransform the development of projects
+            into something collaborative is one of its main characteristics.
+          </p>
         </div>
       </div>
     </div>

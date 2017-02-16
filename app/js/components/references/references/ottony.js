@@ -16,11 +16,11 @@ const Ottony = () => {
         </header>
 
         <div className={style.reference__text}>
-          Muito carismático e extrovertido, está sempre em busca de boas relações
-          com a equipe. É muito competente e comprometido com os projetos nos
-          quais trabalha, prezando pelas melhores formas de desenvolver as
-          soluções necessárias. Sua dinamicidade e pluralidade permite com que
-          ele saiba alternar entre diferentes áreas do desenvolvimento web.
+          <p>
+            Organized and with a natural talent with people, Kauê is capable to work
+            as a team by being clear in their goals and open to differing opinions.
+            Their creativity stands out if reflected in their works.
+          </p>
         </div>
       </div>
     </div>

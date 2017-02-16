@@ -16,11 +16,10 @@ const Virna = () => {
         </header>
 
         <div className={style.reference__text}>
-          Muito carismático e extrovertido, está sempre em busca de boas relações
-          com a equipe. É muito competente e comprometido com os projetos nos
-          quais trabalha, prezando pelas melhores formas de desenvolver as
-          soluções necessárias. Sua dinamicidade e pluralidade permite com que
-          ele saiba alternar entre diferentes áreas do desenvolvimento web.
+          <p>
+            Its dynamicity and plurality allows it to know how to switch between
+            different areas of web development.
+          </p>
         </div>
       </div>
     </div>

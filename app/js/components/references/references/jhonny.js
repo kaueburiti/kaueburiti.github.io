@@ -16,11 +16,11 @@ const Jhonny = () => {
         </header>
 
         <div className={style.reference__text}>
-          Muito carismático e extrovertido, está sempre em busca de boas relações
-          com a equipe. É muito competente e comprometido com os projetos nos
-          quais trabalha, prezando pelas melhores formas de desenvolver as
-          soluções necessárias. Sua dinamicidade e pluralidade permite com que
-          ele saiba alternar entre diferentes áreas do desenvolvimento web.
+          <p>
+            It's hard for me to say that out loud, 'cause I'm quite competitive,
+            but this guy is inspiring. He's learning new stuff everyday and knows
+            how to work with bleeding edge front-end technologies.
+          </p>
         </div>
       </div>
     </div>

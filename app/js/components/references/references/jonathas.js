@@ -16,11 +16,11 @@ const Jonathas = () => {
         </header>
 
         <div className={style.reference__text}>
-          Muito carismático e extrovertido, está sempre em busca de boas relações
-          com a equipe. É muito competente e comprometido com os projetos nos
-          quais trabalha, prezando pelas melhores formas de desenvolver as
-          soluções necessárias. Sua dinamicidade e pluralidade permite com que
-          ele saiba alternar entre diferentes áreas do desenvolvimento web.
+          <p>
+            A professional that cares about the quality of their work. Engaged in 
+            studies about his area, reaching to implement the best practices in
+            their projects. He works very well as a team and is easy to deal with.
+          </p>
         </div>
       </div>
     </div>
