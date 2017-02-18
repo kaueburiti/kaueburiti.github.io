@@ -98,6 +98,7 @@ module.exports = {
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
+      mangle: false,
       compress: {
         warnings: false
       }
