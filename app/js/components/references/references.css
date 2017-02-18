@@ -58,9 +58,10 @@
 
   &:hover{
     .reference__content{
+      padding: var(--default-padding);
       transform: translateY(0);
       background: rgba(#000, 0.7);
-      transition: transform .5s, background 1.5s;
+      transition: all .5s, background 1.5s;
 
     }
   }
