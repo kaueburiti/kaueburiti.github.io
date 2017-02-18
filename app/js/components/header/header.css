@@ -3,7 +3,7 @@
 .header{
   position: relative;
   margin-bottom: calc(var(--large-padding) * 2);
-  
+
   &__content{
     text-align: center;
     position: absolute;
@@ -19,6 +19,11 @@
     font-size: var(--larger-font-size);
     line-height: var(--larger-line-height);
     margin: 0;
+    display: inline;
+
+    @media(--small-viewport){
+      display: inline-block;
+    }
   }
 
   &__subheading{
