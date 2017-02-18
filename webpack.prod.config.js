@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path')
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 
@@ -92,7 +93,7 @@ module.exports = {
     ];
   },
   plugins: [
-    new ExtractTextPlugin('./public/styles.css', {
+    new ExtractTextPlugin('styles.css', {
       allChunks: true
     }),
     new webpack.optimize.DedupePlugin(),
