@@ -20,11 +20,11 @@ const Tribuna = () => {
           'React + Redux stack'
         ]
       }>
-      <p>Right now I'm working remotly to Ecostage, a company that have focus on
-      technological projects related with the <span className={style.highlight}>environment cause</span>. The experience with
+      <p>Right now I'm working remotely at Ecostage, a company that have focuses on
+      technological projects related to the <span className={style.highlight}>environmental cause</span>. The experience with
       a <span className={style.highlight}>remote job</span> and
       more <span className={style.highlight}>independent teams</span> has been a huge learning!</p>
-      <p>Normaly we use a robust front-end stack, using <span className={style.highlight}>Rails as API</span> to communicate with a total
+      <p>Usually, we use a robust front-end stack, using <span className={style.highlight}>Rails as API</span> to communicate with a total
       independent <span className={style.highlight}>front-end driven application</span>.</p>
     </Experience>
   );

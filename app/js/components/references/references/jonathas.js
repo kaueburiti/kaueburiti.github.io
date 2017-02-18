@@ -17,9 +17,9 @@ const Jonathas = () => {
 
         <div className={style.reference__text}>
           <p>
-            A professional that cares about the quality of their work. Engaged in 
-            studies about his area, reaching to implement the best practices in
-            their projects. He works very well as a team and is easy to deal with.
+            A professional who cares about the quality of his work. Engaged in
+            studies on his area, reaching to implement the best practices in
+            his projects. He works very well as a team and is easy to deal with.
           </p>
         </div>
       </div>

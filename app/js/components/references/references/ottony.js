@@ -17,9 +17,9 @@ const Ottony = () => {
 
         <div className={style.reference__text}>
           <p>
-            Organized and with a natural talent with people, Kauê is capable to work
-            as a team by being clear in their goals and open to differing opinions.
-            Their creativity stands out if reflected in their works.
+            Organized and with a natural talent with people, Kauê is capable of working
+            as a team by being clear about his goals and open to differing opinions.
+            His creativity stands out and is reflected in his works.
           </p>
         </div>
       </div>

@@ -17,7 +17,7 @@ const Virna = () => {
 
         <div className={style.reference__text}>
           <p>
-            Its dynamicity and plurality allows it to know how to switch between
+            His dynamicity and plurality allow him to know how to switch between
             different areas of web development.
           </p>
         </div>
