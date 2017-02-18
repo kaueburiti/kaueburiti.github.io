@@ -16,11 +16,9 @@ const Jaimerson = () => {
         </header>
 
         <div className={style.reference__text}>
-          Muito carismático e extrovertido, está sempre em busca de boas relações
-          com a equipe. É muito competente e comprometido com os projetos nos
-          quais trabalha, prezando pelas melhores formas de desenvolver as
-          soluções necessárias. Sua dinamicidade e pluralidade permite com que
-          ele saiba alternar entre diferentes áreas do desenvolvimento web.
+          Kauê is an outstanding professional, disciplined and communicative.
+          His expertise and discipline allow him to be extremely precise with
+          the estimates he provides on delivery times.
         </div>
       </div>
     </div>
