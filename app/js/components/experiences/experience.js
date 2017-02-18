@@ -29,9 +29,9 @@ const ExperienceContent = (props) => {
         {props.company}
       </h3>
 
-      <p className={style.experienceContent__text}>
+      <div className={style.experienceContent__text}>
         {props.children}
-      </p>
+      </div>
 
       <ul className={style.experienceContent__skills}>
         {
