@@ -1,8 +1,7 @@
 @import 'css/base/variables.css';
 @import 'css/base/breakpoints.css';
 
-@custom-media --ballons-breakpoint (min-width: 670px);
-@custom-media --before-ballons-breakpoint (max-width: 669px);
+$ballons-breakpoint: 780px;
 
 .profile{
   &__resume{
@@ -11,6 +10,7 @@
     font-size: var(--big-font-size);
     line-height: var(--big-line-height);
     margin-bottom: var(--default-padding);
+    text-align: left;
 
     .highlight{
       color: var(--main-color);
@@ -20,11 +20,25 @@
     &:last-child{
       margin-bottom: 0;
     }
+
+    @media(--small-viewport){
+      text-align: center;
+    }
   }
 
   &__picture-area{
     position: relative;
     margin-bottom: var(--large-padding);
+  }
+
+  &__picture{
+    display: block;
+    margin: 0 auto;
+    max-height: 350px;
+
+    @media(min-width: $ballons-breakpoint){
+      max-height: 100%;
+    }
   }
 }
 
@@ -41,7 +55,7 @@
     color: #FFF;
   }
 
-  @media(--before-ballons-breakpoint){
+  @media(max-width: $ballons-breakpoint){
     margin: 0 5px;
     text-align: center;
     display: inline-block;
@@ -61,7 +75,7 @@
 
 .balloon.one,
 .balloon.two{
-  @media(--before-ballons-breakpoint){
+  @media(max-width: $ballons-breakpoint){
     margin-bottom: var(--default-padding);
 
     &:last-child{
@@ -74,7 +88,7 @@
     }
   }
 
-  @media(--ballons-breakpoint){
+  @media(min-width: $ballons-breakpoint){
     &:before{
       left: auto;
       right: 5px;
@@ -89,7 +103,7 @@
 .balloon.four{
   transform: translate(150px, -60%);
 
-  @media(--before-ballons-breakpoint){
+  @media(max-width: $ballons-breakpoint){
     margin-top: var(--default-padding);
 
 
