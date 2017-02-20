@@ -8,7 +8,7 @@ const Profile = () => {
   return(
     <Section
       title={'Profile'}
-      subheading={'Who am I and how can you find me.'}
+      subheading={'I am the one who knocks.'}
       id="profile"
       top
       className={style.profileContainer} >

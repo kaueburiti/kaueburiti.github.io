@@ -8,7 +8,7 @@ const Experiences = () => {
   return (
     <Section
       title="Experiences"
-      subheading={'Let me tell more about me, ok?'}
+      subheading={"I'm gonna make him an offer he can't refuse."}
       id="experiences">
 
       <EmpregosRN />

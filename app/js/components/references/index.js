@@ -14,7 +14,7 @@ const References = () => {
   return (
     <Section
       title="References"
-      subheading={'Let me tell more about me, ok?'}
+      subheading={'Wind and words.'}
       id="references">
 
       <Container>

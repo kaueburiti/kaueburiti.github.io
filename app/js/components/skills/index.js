@@ -14,7 +14,7 @@ const Skills = () => {
   return(
     <Section
       title="Skills"
-      subheading={'"But what I do have are a very particular set of skill..." (TAKEN, 2008)'}
+      subheading={'But what I do have are a very particular set of skill...'}
       id="skills">
 
       <div className={style.skill}>
