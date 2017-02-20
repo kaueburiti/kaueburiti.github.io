@@ -51,9 +51,14 @@
     padding: 0 15px;
     text-align: justify;
     font-weight: 100;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: .9rem;
+    line-height: 1.5rem;
     padding-bottom: var(--default-padding);
+
+    @media(--small-viewport){
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
   }
 
   &:hover{
