@@ -11,7 +11,7 @@ const Contact = () => {
     <div id="contact" className={style.contact}>
       <div className={style.contact__overlay}></div>
       <div className={style.contact__content}>
-        <h3 className={style.contact__call}>Want to contact me? Please, send me a email!</h3>
+        <h3 className={style.contact__call}>Want to contact me? Please, send me an email!</h3>
         <p className={style.contact__email}>contact@kaueburiti.com</p>
       </div>
     </div>
