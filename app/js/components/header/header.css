@@ -1,4 +1,5 @@
 @import "css/base/variables.css";
+@import "css/base/breakpoints.css";
 
 .header{
   position: relative;
@@ -16,13 +17,15 @@
     position: relative;
     font-family: var(--special-font);
     color: #FFF;
-    font-size: var(--larger-font-size);
-    line-height: var(--larger-line-height);
+    font-size: var(--large-font-size);
+    line-height: var(--large-line-height);
     margin: 0;
     display: inline;
 
     @media(--small-viewport){
       display: inline-block;
+      font-size: var(--larger-font-size);
+      line-height: var(--larger-line-height);
     }
   }
 
