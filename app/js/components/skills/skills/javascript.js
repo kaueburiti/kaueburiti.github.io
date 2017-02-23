@@ -1,8 +1,12 @@
 import React from "react";
 import { Section, Container, Column, Row } from 'components/grid/';
+import javascriptImage from "image/skills/javascript.jpg";
+import { loadBackgroundImage } from "./lib.js";
 import style from "./../skills.css";
 
 const Javascript = (props) => {
+  loadBackgroundImage(javascriptImage, style.skill__header, style.fadeIn);
+
   return(
     <div>
       <header className={style.skill__header + ' ' + style.javascript}>
@@ -35,7 +39,7 @@ const Javascript = (props) => {
          a totally new generation of <span className={style.highlight}>front-end driven applications</span>.</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Javascript;

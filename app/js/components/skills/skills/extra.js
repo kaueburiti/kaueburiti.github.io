@@ -1,8 +1,12 @@
 import React from "react";
 import { Section, Container, Column, Row } from 'components/grid/';
+import extraImage from "image/skills/extra.jpg";
+import { loadBackgroundImage } from "./lib.js";
 import style from "./../skills.css";
 
 const ExtraSkills = (props) => {
+  loadBackgroundImage(extraImage, style.skill__header, style.fadeIn);
+
   return(
     <div>
       <header className={style.skill__header + ' ' + style.extra}>
@@ -34,7 +38,7 @@ const ExtraSkills = (props) => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ExtraSkills;

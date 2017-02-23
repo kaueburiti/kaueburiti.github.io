@@ -1,11 +1,15 @@
 import React from "react";
 import { Section, Container, Column, Row } from 'components/grid/';
+import htmlImage from "image/skills/html.jpg";
+import { loadBackgroundImage } from "./lib.js";
 import style from "./../skills.css";
 
 const HtmlCss = (props) => {
+  loadBackgroundImage(htmlImage, style.skill__header, style.fadeIn);
+
   return(
-    <div>
-      <header className={style.skill__header + ' ' + style.html}>
+    <div id="html-css">
+      <header className={style.skill__header}>
         <Container>
           <Row>
             <Column options={['col-xs-12']}>
@@ -35,7 +39,7 @@ const HtmlCss = (props) => {
         subjects, wich each day more, gives me interesting new things to study!</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default HtmlCss;

@@ -1,8 +1,12 @@
 import React from "react";
 import { Section, Container, Column, Row } from 'components/grid/';
+import managementImage from "image/skills/management.jpg";
+import { loadBackgroundImage } from "./lib.js";
 import style from "./../skills.css";
 
 const ProjectManagement = (props) => {
+  loadBackgroundImage(managementImage, style.skill__header, style.fadeIn);
+
   return(
     <div>
       <header className={style.skill__header + ' ' + style.management}>
@@ -32,7 +36,7 @@ const ProjectManagement = (props) => {
         independent professional.</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ProjectManagement;

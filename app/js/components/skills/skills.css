@@ -28,48 +28,25 @@
     color: #FFF;
     width: 100%;
     height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #3d3d3d;
 
+    transition: all 3s;
 
     margin-bottom: var(--large-padding);
 
     &.javascript{
       background: url('image/skills/javascript.jpg');
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
     }
 
-    &.html{
-      background: url('image/skills/html.jpg');
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &.design{
-      background: url('image/skills/design.jpg');
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &.management{
-      background: url('image/skills/management.jpg');
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &.extra{
-      background: url('image/skills/extra.jpg');
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+    &.fade-in{
+      animation-name: fade-in;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
     }
   }
 
@@ -123,7 +100,6 @@
 
   &__tab-content{
     animation: fade-in 1s linear;
-
   }
 
   .highlight{

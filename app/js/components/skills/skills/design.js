@@ -1,8 +1,12 @@
 import React from "react";
 import { Section, Container, Column, Row } from 'components/grid/';
+import designImage from "image/skills/design.jpg";
+import { loadBackgroundImage } from "./lib.js";
 import style from "./../skills.css";
 
 const Design = (props) => {
+  loadBackgroundImage(designImage, style.skill__header, style.fadeIn);
+
   return(
     <div>
       <header className={style.skill__header + ' ' + style.design}>
@@ -34,7 +38,7 @@ const Design = (props) => {
         <span className={style.highlight}> prototyping</span> and idea's validation.</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Design;
