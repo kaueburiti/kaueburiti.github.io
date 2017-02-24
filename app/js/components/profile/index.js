@@ -2,7 +2,7 @@ import React from "react";
 import {Container, Column, Row, Section} from 'components/grid/';
 import Balloon from 'components/ui/balloon/';
 import style from "./profile.css";
-import mansFace from "image/profile/mans_face.png";
+import mansFace from "image/profile/8bit.png";
 
 const Profile = () => {
   return(

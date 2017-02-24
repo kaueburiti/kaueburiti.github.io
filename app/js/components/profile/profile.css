@@ -37,7 +37,7 @@ $ballons-breakpoint: 780px;
     max-height: 350px;
 
     @media(min-width: $ballons-breakpoint){
-      max-height: 100%;
+      max-height: 400px;
     }
   }
 }
@@ -101,8 +101,6 @@ $ballons-breakpoint: 780px;
 
 .balloon.three,
 .balloon.four{
-  transform: translate(150px, -60%);
-
   @media(max-width: $ballons-breakpoint){
     margin-top: var(--default-padding);
 
@@ -118,18 +116,20 @@ $ballons-breakpoint: 780px;
 
 .balloon.one{
   top: 0;
-  transform: translate(-280px, -60%);
+  transform: translate(-250px, -60%);
 }
 
 .balloon.two{
   top: 180px;
-  transform: translate(-380px, -60%);
+  transform: translate(-330px, -80px);
 }
 
 .balloon.three{
   top: 100px;
+  transform: translate(180px, -60px);
 }
 
 .balloon.four{
   top: 290px;
+  transform: translate(200px, -140px);
 }
