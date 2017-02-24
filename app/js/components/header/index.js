@@ -8,7 +8,7 @@ import style from "./header.css";
 
 const Header = () => {
   return(
-    <div className={style.header}>
+    <div id="header" className={style.header}>
       <Navbar />
       <div className={style.header__bg}></div>
       <div className={style.header__mask}></div>

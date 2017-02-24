@@ -42,6 +42,10 @@
     }
   }
 
+  &__logo{
+    cursor: pointer;
+  }
+
   &__items{
     @media(--max-medium-viewport){
       display: block !important;
@@ -67,7 +71,6 @@
   }
 
   &__item{
-
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 2px;

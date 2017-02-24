@@ -41,7 +41,12 @@ const Navbar = (props) => {
         <Container>
           <Row options={['middle-xs']}>
             <Column options={['col-xs-8', 'col-md-2']}>
-              <img height="50px" src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/codeschool-4096-black.png" />
+              <Jump target="#header">
+                <img
+                  className={style.mainMenu__logo}
+                  height="50px"
+                  src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/codeschool-4096-black.png" />
+              </Jump>
             </Column>
 
             <Column options={['col-md-10', 'last-xs', 'end-md']}>
