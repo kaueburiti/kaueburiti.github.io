@@ -22,7 +22,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    background: rgba(var(--secondary-color), 0.85);
+    background: rgba(var(--third-color), 0.70);
   }
 
   &__content{
