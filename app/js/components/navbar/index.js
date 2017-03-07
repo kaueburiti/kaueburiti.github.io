@@ -9,6 +9,7 @@ import FontAwesome from 'react-fontawesome';
 import {Container, Column, Row} from 'components/grid/';
 import Button from 'components/ui/button/';
 import style from './navbar.css';
+import logo from 'image/logo/logo.png';
 
 const mapStateToProps = (state) => {
   return {
@@ -42,10 +43,7 @@ const Navbar = (props) => {
           <Row options={['middle-xs']}>
             <Column options={['col-xs-8', 'col-md-2']}>
               <Jump target="#header">
-                <img
-                  className={style.mainMenu__logo}
-                  height="50px"
-                  src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/codeschool-4096-black.png" />
+                <p className={style.mainMenu__logo}>&#60;/&#62;</p>
               </Jump>
             </Column>
 
